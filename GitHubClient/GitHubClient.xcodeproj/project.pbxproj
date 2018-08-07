@@ -13,6 +13,8 @@
 		CA5E069F2119A27F00E18690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5E069E2119A27F00E18690 /* Assets.xcassets */; };
 		CA5E06A22119A27F00E18690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5E06A02119A27F00E18690 /* LaunchScreen.storyboard */; };
 		CA5E06AD2119A27F00E18690 /* GitHubClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06AC2119A27F00E18690 /* GitHubClientTests.swift */; };
+		CA5E06BA2119DA5B00E18690 /* LoginTextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06B92119DA5B00E18690 /* LoginTextfieldView.swift */; };
+		CA5E06BC2119E8D500E18690 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06BB2119E8D500E18690 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		CA5E06A82119A27F00E18690 /* GitHubClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5E06AC2119A27F00E18690 /* GitHubClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClientTests.swift; sourceTree = "<group>"; };
 		CA5E06AE2119A27F00E18690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5E06B92119DA5B00E18690 /* LoginTextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextfieldView.swift; sourceTree = "<group>"; };
+		CA5E06BB2119E8D500E18690 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				CA5E069E2119A27F00E18690 /* Assets.xcassets */,
 				CA5E06A02119A27F00E18690 /* LaunchScreen.storyboard */,
 				CA5E06A32119A27F00E18690 /* Info.plist */,
+				CA5E06B92119DA5B00E18690 /* LoginTextfieldView.swift */,
+				CA5E06BB2119E8D500E18690 /* Button.swift */,
 			);
 			path = GitHubClient;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 			files = (
 				CA5E069A2119A27D00E18690 /* ViewController.swift in Sources */,
 				CA5E06982119A27D00E18690 /* AppDelegate.swift in Sources */,
+				CA5E06BA2119DA5B00E18690 /* LoginTextfieldView.swift in Sources */,
+				CA5E06BC2119E8D500E18690 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

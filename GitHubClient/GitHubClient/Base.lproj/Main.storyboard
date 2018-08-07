@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,147 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitHubClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermellon" translatesAutoresizingMaskIntoConstraints="NO" id="Vaq-u7-Krd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.68235294120000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsK-nf-Jub" customClass="LoginTextfieldView" customModule="GitHubClient" customModuleProvider="target">
+                                <rect key="frame" x="30" y="320" width="315" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HE4-es-Kgu" userLabel="portrait.height"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.41176470590000003" green="0.68235294120000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="separatorColor">
+                                        <color key="value" red="0.41176470590000003" green="0.68235294120000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HE4-es-Kgu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HE4-es-Kgu"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv6-c6-VlN" userLabel="Validate" customClass="Button" customModule="GitHubClient" customModuleProvider="target">
+                                <rect key="frame" x="30" y="550" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.68235294120000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yNQ-ds-v8K"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.41176470590000003" green="0.68235294120000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vaq-u7-Krd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="1Gs-18-aij" userLabel="portrait.height"/>
+                            <constraint firstItem="vv6-c6-VlN" firstAttribute="leading" secondItem="Vaq-u7-Krd" secondAttribute="trailing" constant="20" id="2Nq-Jg-ZDJ" userLabel="landscape.validate.leading"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EsK-nf-Jub" secondAttribute="trailing" constant="30" id="DsQ-c8-i4k" userLabel="portrait.login.trailing"/>
+                            <constraint firstItem="EsK-nf-Jub" firstAttribute="top" secondItem="Vaq-u7-Krd" secondAttribute="bottom" constant="100" id="Erp-x3-mK8" userLabel="portrait.login.top"/>
+                            <constraint firstAttribute="trailing" secondItem="EsK-nf-Jub" secondAttribute="trailing" constant="20" id="Ht1-Es-wHg" userLabel="landscape.login.trailing"/>
+                            <constraint firstItem="EsK-nf-Jub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Kog-AD-3RI" userLabel="portrait.login.leading"/>
+                            <constraint firstItem="vv6-c6-VlN" firstAttribute="top" secondItem="EsK-nf-Jub" secondAttribute="bottom" constant="150" id="SmE-Y0-JYK" userLabel="portrait.validate.top"/>
+                            <constraint firstItem="Vaq-u7-Krd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WgR-ol-B6E" userLabel="portrait.leading"/>
+                            <constraint firstItem="Vaq-u7-Krd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X4e-Oa-04w" userLabel="portrait.top"/>
+                            <constraint firstItem="EsK-nf-Jub" firstAttribute="leading" secondItem="Vaq-u7-Krd" secondAttribute="trailing" constant="20" id="aGv-SK-Ne9" userLabel="landscape.login.leading"/>
+                            <constraint firstItem="Vaq-u7-Krd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="bst-Sc-S9r" userLabel="landscape.width"/>
+                            <constraint firstItem="Vaq-u7-Krd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cFG-pW-fL0" userLabel="landscape.vertical.align"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vaq-u7-Krd" secondAttribute="trailing" id="dFb-yD-zwu" userLabel="portrait.trailing"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vv6-c6-VlN" secondAttribute="trailing" constant="30" id="evv-Cy-Z24" userLabel="portrait.validate.trailing"/>
+                            <constraint firstItem="Vaq-u7-Krd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hnH-x1-p22" userLabel="landscape.leading"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vv6-c6-VlN" secondAttribute="trailing" constant="20" id="hvS-ND-iTz" userLabel="landscape.validate.trailing"/>
+                            <constraint firstItem="EsK-nf-Jub" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="ipN-nD-Bm4" userLabel="landscape.login.top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vv6-c6-VlN" secondAttribute="bottom" constant="20" id="iuP-KG-o0f" userLabel="landscape.validate.bottom"/>
+                            <constraint firstItem="Vaq-u7-Krd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="kzL-Yi-hAW" userLabel="landscape.height"/>
+                            <constraint firstItem="vv6-c6-VlN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="mEq-8b-VaP" userLabel="portrait.validate.leading"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="DsQ-c8-i4k"/>
+                                <exclude reference="dFb-yD-zwu"/>
+                                <exclude reference="evv-Cy-Z24"/>
+                                <include reference="hvS-ND-iTz"/>
+                                <include reference="iuP-KG-o0f"/>
+                                <exclude reference="1Gs-18-aij"/>
+                                <exclude reference="WgR-ol-B6E"/>
+                                <exclude reference="X4e-Oa-04w"/>
+                                <include reference="bst-Sc-S9r"/>
+                                <include reference="cFG-pW-fL0"/>
+                                <include reference="hnH-x1-p22"/>
+                                <include reference="kzL-Yi-hAW"/>
+                                <exclude reference="Erp-x3-mK8"/>
+                                <include reference="Ht1-Es-wHg"/>
+                                <exclude reference="Kog-AD-3RI"/>
+                                <include reference="aGv-SK-Ne9"/>
+                                <include reference="ipN-nD-Bm4"/>
+                                <include reference="2Nq-Jg-ZDJ"/>
+                                <exclude reference="SmE-Y0-JYK"/>
+                                <exclude reference="mEq-8b-VaP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="DsQ-c8-i4k"/>
+                                <include reference="dFb-yD-zwu"/>
+                                <include reference="evv-Cy-Z24"/>
+                                <exclude reference="hvS-ND-iTz"/>
+                                <exclude reference="iuP-KG-o0f"/>
+                                <include reference="1Gs-18-aij"/>
+                                <include reference="WgR-ol-B6E"/>
+                                <include reference="X4e-Oa-04w"/>
+                                <exclude reference="bst-Sc-S9r"/>
+                                <exclude reference="cFG-pW-fL0"/>
+                                <exclude reference="hnH-x1-p22"/>
+                                <exclude reference="kzL-Yi-hAW"/>
+                                <include reference="Erp-x3-mK8"/>
+                                <exclude reference="Ht1-Es-wHg"/>
+                                <include reference="Kog-AD-3RI"/>
+                                <exclude reference="aGv-SK-Ne9"/>
+                                <exclude reference="ipN-nD-Bm4"/>
+                                <exclude reference="2Nq-Jg-ZDJ"/>
+                                <include reference="SmE-Y0-JYK"/>
+                                <include reference="mEq-8b-VaP"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="38.23088455772114" y="127.2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="watermellon" width="2500" height="1667"/>
+    </resources>
 </document>
