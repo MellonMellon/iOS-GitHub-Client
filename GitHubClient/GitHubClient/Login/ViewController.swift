@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+  func goToFruit() {
+    let storyboard = UIStoryboard(name: "Fruits", bundle: Bundle.main)
+    if let firstViewController = storyboard.instantiateInitialViewController() {
+      self.present(firstViewController, animated: true, completion: nil)
+    }
+  }
 
+  @IBAction func validateAction(_ sender: Any) {
+    self.goToFruit()
+  }
 }
 
