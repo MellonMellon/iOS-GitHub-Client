@@ -22,4 +22,7 @@ class Store {
     Fruit(name: "orange"),
     ]
   
+  static var token: String = ""
+  static var user: User? = nil
+  
 }
