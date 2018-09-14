@@ -45,6 +45,14 @@ class LoginTextfieldView: UIView {
   let passwordTextfield = UITextField()
   let separatorView = UIView()
   
+  var username: String {
+    return loginTextfield.text ?? ""
+  }
+  
+  var password: String {
+    return passwordTextfield.text ?? ""
+  }
+  
   override func awakeFromNib() {
     super.awakeFromNib()
     //xibSetup()
@@ -57,6 +65,7 @@ class LoginTextfieldView: UIView {
   }
   
   func setup() {
+    loginTextfield.keyboardType = .default
     loginTextfield.placeholder = "Email"
 
     passwordTextfield.placeholder = "Password"

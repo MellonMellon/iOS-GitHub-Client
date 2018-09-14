@@ -20,6 +20,12 @@
 		CA5E06C3211B380700E18690 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06C2211B380700E18690 /* Fruit.swift */; };
 		CA5E06C5211B3B9D00E18690 /* EditFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06C4211B3B9D00E18690 /* EditFruitViewController.swift */; };
 		CA5E06C9211B3CD200E18690 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06C8211B3CD200E18690 /* Store.swift */; };
+		CA5E06D2211C85FB00E18690 /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06D1211C85FB00E18690 /* HTTPSession.swift */; };
+		CA5E06D4211C86DB00E18690 /* API+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06D3211C86DB00E18690 /* API+User.swift */; };
+		CA5E06D6211C8A5F00E18690 /* ViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06D5211C8A5F00E18690 /* ViewController+Util.swift */; };
+		CA5E06D8211C8CCE00E18690 /* API+Authent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06D7211C8CCE00E18690 /* API+Authent.swift */; };
+		CA5E06DC211C8DA700E18690 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06DB211C8DA700E18690 /* User.swift */; };
+		CA5E06DE211C8F0C00E18690 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E06DD211C8F0C00E18690 /* Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		CA5E06C2211B380700E18690 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		CA5E06C4211B3B9D00E18690 /* EditFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFruitViewController.swift; sourceTree = "<group>"; };
 		CA5E06C8211B3CD200E18690 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		CA5E06D1211C85FB00E18690 /* HTTPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSession.swift; sourceTree = "<group>"; };
+		CA5E06D3211C86DB00E18690 /* API+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+User.swift"; sourceTree = "<group>"; };
+		CA5E06D5211C8A5F00E18690 /* ViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Util.swift"; sourceTree = "<group>"; };
+		CA5E06D7211C8CCE00E18690 /* API+Authent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API+Authent.swift"; sourceTree = "<group>"; };
+		CA5E06DB211C8DA700E18690 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CA5E06DD211C8F0C00E18690 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,7 @@
 				CA5E06C6211B3CB300E18690 /* Login */,
 				CA5E06BD211B2FAC00E18690 /* Fruits */,
 				CA5E06972119A27D00E18690 /* AppDelegate.swift */,
+				CA5E06D5211C8A5F00E18690 /* ViewController+Util.swift */,
 				CA5E069E2119A27F00E18690 /* Assets.xcassets */,
 				CA5E06A02119A27F00E18690 /* LaunchScreen.storyboard */,
 				CA5E06A32119A27F00E18690 /* Info.plist */,
@@ -117,7 +130,6 @@
 			children = (
 				CA5E06BE211B2FD400E18690 /* FruitsViewController.swift */,
 				CA5E06C0211B30A900E18690 /* Fruits.storyboard */,
-				CA5E06C2211B380700E18690 /* Fruit.swift */,
 				CA5E06C4211B3B9D00E18690 /* EditFruitViewController.swift */,
 			);
 			path = Fruits;
@@ -136,9 +148,31 @@
 		CA5E06C7211B3CC800E18690 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CA5E06DA211C8D9A00E18690 /* Model */,
+				CA5E06D9211C8D8E00E18690 /* API */,
 				CA5E06C8211B3CD200E18690 /* Store.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		CA5E06D9211C8D8E00E18690 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E06D7211C8CCE00E18690 /* API+Authent.swift */,
+				CA5E06D1211C85FB00E18690 /* HTTPSession.swift */,
+				CA5E06D3211C86DB00E18690 /* API+User.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CA5E06DA211C8D9A00E18690 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA5E06C2211B380700E18690 /* Fruit.swift */,
+				CA5E06DB211C8DA700E18690 /* User.swift */,
+				CA5E06DD211C8F0C00E18690 /* Codable.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,13 +277,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5E06DC211C8DA700E18690 /* User.swift in Sources */,
 				CA5E06C3211B380700E18690 /* Fruit.swift in Sources */,
 				CA5E06C5211B3B9D00E18690 /* EditFruitViewController.swift in Sources */,
+				CA5E06D6211C8A5F00E18690 /* ViewController+Util.swift in Sources */,
+				CA5E06DE211C8F0C00E18690 /* Codable.swift in Sources */,
 				CA5E069A2119A27D00E18690 /* ViewController.swift in Sources */,
+				CA5E06D2211C85FB00E18690 /* HTTPSession.swift in Sources */,
 				CA5E06C9211B3CD200E18690 /* Store.swift in Sources */,
 				CA5E06BF211B2FD400E18690 /* FruitsViewController.swift in Sources */,
 				CA5E06982119A27D00E18690 /* AppDelegate.swift in Sources */,
 				CA5E06BA2119DA5B00E18690 /* LoginTextfieldView.swift in Sources */,
+				CA5E06D8211C8CCE00E18690 /* API+Authent.swift in Sources */,
+				CA5E06D4211C86DB00E18690 /* API+User.swift in Sources */,
 				CA5E06BC2119E8D500E18690 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
